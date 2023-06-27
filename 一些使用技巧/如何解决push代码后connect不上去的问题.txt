@@ -1,0 +1,14 @@
+git push -u origin master出问题，Recv failure: Connection was reset
+原因：
+ git remote add origin https://github.com/hipigod/vue-test-demo.git
+url是https而不是git@
+
+解决办法：
+1、查看自己本机系统代理：
+设置---网络和Internet---代理---地址:端口
+打开代理服务器，
+
+二、修改git配置：（其中的10809改为你电脑的端口号）
+
+git config --global http.proxy http://127.0.0.1:端口号
+git config --global https.proxy http://127.0.0.1:端口号

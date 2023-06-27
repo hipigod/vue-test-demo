@@ -1,0 +1,6 @@
+1、新建一个文件夹，名字与git上面的一致
+2、点进文件夹，右击选择 git bash here
+3、输入git init 初始化本地文件夹
+4、输入 git remote add origin git@github.com:账号名称/项目名称.git 
+5、把代码复制到新建的文件夹中
+6、输入 git push -u origin master 把代码初次上传
